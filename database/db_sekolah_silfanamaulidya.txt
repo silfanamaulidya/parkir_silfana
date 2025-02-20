@@ -1,0 +1,17 @@
+membuat db:create database db_parkir_silfanamaulidya
+table parkir:create table parkir(
+    id_parkir varchar(8) PRIMARY KEY,
+    lokasi varchar(9),
+    harga varchar(15)
+    );
+table kendaraan:create table kendaraan(
+    plat_no varchar(11) PRIMARY KEY,
+    merk varchar(4),
+    jenis_kendaraan varchar(5),
+    id_parkir varchar(8)
+    );
+insert into kendaraan values
+    ("B 123","mio","motor","p29"),("C 456","beat","motor","p29"),("D 789","brio","mobil","p29"),("F 101","pcx","motor","p29"),("G 102","ayla","mobil","p29");
+    
+
+bikin relasi:hapus data primary key=DELETE FROM kendaraan;,buka structured pilih yang manu di jdiin foregin ke.
