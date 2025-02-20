@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 19, 2025 at 01:49 PM
+-- Generation Time: Feb 20, 2025 at 10:16 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.25
 
@@ -54,19 +54,20 @@ INSERT INTO `kendaraan` (`plat_no`, `merk`, `jenis_kendaraan`, `id_parkir`) VALU
 CREATE TABLE `parkir` (
   `id_parkir` varchar(8) NOT NULL,
   `lokasi` varchar(9) DEFAULT NULL,
-  `harga` varchar(15) DEFAULT NULL
+  `harga` varchar(15) DEFAULT NULL,
+  `blok_parkir` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `parkir`
 --
 
-INSERT INTO `parkir` (`id_parkir`, `lokasi`, `harga`) VALUES
-('j25', 'borma', '3000'),
-('l28', 'mall', '3000'),
-('m27', 'pujasera', '2000'),
-('n26', 'kampus 2', '2000'),
-('p29', 'kampus 1', '2000');
+INSERT INTO `parkir` (`id_parkir`, `lokasi`, `harga`, `blok_parkir`) VALUES
+('j25', 'borma', '3000', 'blok a'),
+('l28', 'mall', '3000', 'blok a'),
+('m27', 'pujasera', '2000', 'blok a'),
+('n26', 'kampus 2', '2000', 'blok a'),
+('p29', 'kampus 1', '2000', 'blok a');
 
 --
 -- Indexes for dumped tables

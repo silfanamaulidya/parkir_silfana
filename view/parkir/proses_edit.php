@@ -1,5 +1,5 @@
 <?php
-$id=$_GET['id'];
+$id_parkir=$_GET['id'];
 
 $lokasi=$_POST['lokasi'];
 $harga=$_POST['harga'];
